@@ -1,0 +1,292 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+*{
+    font:italic;
+    font-family:Arial;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #1c1b1b;
+}
+
+nav {
+    text-align: center; 
+    padding:3px 0px 0px 0px;   
+}
+
+.aMod {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    font-size: large;
+    color: white;    
+    transition: .4s;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+h1{
+    font-family:serif;
+    opacity:.9;
+}
+h3 {
+    font-family: serif;
+    animation: text 3s 1;
+    opacity:.9;
+}
+h4 {
+    color: white;
+    font-family: serif;
+    opacity: .9;
+    margin-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.lang_cont{
+    border-bottom : solid grey;
+    border-width:thin;
+    color : white;
+    font-size : smaller;
+}
+.center_elem {
+    margin: 0px auto;
+}
+.nin_width {
+    width: 90%;
+}
+.lang_ref{
+    color:white;
+}
+.NavCont {
+    width: 70%;
+    margin: 0px auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    opacity: 1;
+    z-index: 1;
+    position: sticky;
+    top:0px;
+}
+.shadowbox {
+    box-shadow: 0px 10px 15px 5px  red;
+}
+.IndCont {
+    
+    background-size: cover;
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat, repeat-x;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+    .IndCont::after {
+        content: "";
+        background-image: url('../images/code_code_editor_coding_computer_data_developing_development_ethernet-1366450.jpg!d.jpg');
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        border-bottom: solid thin grey;
+        box-shadow: 0px 10px 15px 5px red;
+    }
+.logo {
+    width: 400px;
+    height: 120px;
+    margin-top: 150px;
+    margin-bottom: 180px;
+    transition: 3s;
+
+    animation: logo 3s 1;
+}
+.CabCont {
+    font-family:Kalinga;
+    margin-top: 50px;
+    color: white;
+}
+.Qimg{
+  background-color:white;
+  width: 120px; height:120px;
+  border-radius: 50%;
+  padding:20px;
+  margin: 15px; 
+}
+.Qdiv{
+    margin: 10px 50px 10px 50px;
+}
+.footer {
+    background-repeat: no-repeat, repeat-x;
+    display: block;
+    position: relative;
+    color: white;
+    padding:10px 50px 1px 5px;
+    border-bottom: none;
+}
+    .footer::after {
+        content: "";
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        border-bottom: solid thin grey;
+        box-shadow: 0px -10px 15px 2px red;
+    }
+.FooterP {
+    font-family: serif;
+    font-size: medium;
+}
+.ServsCont{
+    padding:30px;
+}
+.ServCont {
+    border: solid thin gray;
+    border-radius: 5px;
+    width:160px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 10px 15px 2px grey;
+    margin:3px 10px 3px 10px;
+}
+.ServSym{
+    width: 150px;
+    height: 150px;
+    background-color:white;
+    padding:15px;
+}
+.ServP{
+    color:white;
+    font-family:serif;
+}
+.NMlogo{
+    width:250px;
+    height:60px;
+}
+.NMLdiv{
+    margin-top: 50px;
+}
+.PCont {
+    border: solid thin gray;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 10px 15px 2px grey;
+}
+.PFCont {
+    border-top: solid thin gray;
+    border-bottom: solid thin gray;
+    padding: 10px;
+}
+.PP {
+    font-family: Arial italic;
+    color: white;
+}
+.PPic {
+    width: 160px;
+    height: 160px;
+    border-radius: 3px;
+}
+
+.PPCont {
+    width: 80%;
+}
+.QDesc{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    color:black;
+    font-family: serif;
+    font-weight:bold;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top:3px;
+    font-size:13px;
+}
+.mp {
+    margin-top: 70px;
+    margin-bottom: 60px;
+    color: white;
+    padding: 20px;
+    position:relative;
+}
+    .mp::after {
+        content: "";
+        border-top: solid thin red;
+        border-Bottom: solid thin red;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        border-bottom: solid thin grey;
+        box-shadow: 0px 10px 15px 5px red;
+        animation: text 3s 1;
+    }
+
+.SP {
+    text-shadow: -1px 1px 5px silver;
+    opacity: .9;
+    color: red;
+}
+
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -40px;
+        letter-spacing: 2px;
+        opacity: .5;
+    }
+
+}
+@keyframes logo {
+    0% {
+        opacity: .1;
+    }
+}
+.PDP{
+    max-height:300px;
+    max-width:300px;
+}
